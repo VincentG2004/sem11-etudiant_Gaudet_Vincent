@@ -21,6 +21,7 @@ body {
     background-image: url("../images/fond/global.png");
     background-repeat: repeat;
     background-color: black;
+    background-attachment: fixed;
     font: 1.6rem "Oranienbaum", "Arial";
     color: white;
 }
@@ -38,6 +39,14 @@ h2 {
     font: 3.2rem "Monoton", "Arial";
     margin: 0;
     text-transform: uppercase;
+}
+
+a[hreflang="ja"]::after {
+    content: " [en japonais]";
+}
+
+:root {
+    scroll-behavior: smooth;
 }
 
 /*------------------------------------------------------------------------------
@@ -126,6 +135,7 @@ a img {
 
 section.sports {
     background-image: url(../images/fond/bicycles.png);
+    background-attachment: fixed;
 }
 
 
@@ -139,6 +149,7 @@ section.sports {
 
 section.web {
     background-image: url(../images/fond/science.png);
+    background-attachment: fixed;
 }
 
 section.web img {
@@ -177,10 +188,47 @@ section.photos {
     background-image: url("../images/fond/fond.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+section.photos img{
+    width: 30%;
+}
+
+section.photos .images a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.photos .images {
+    display: flex;
+    flex-direction: column;
 }
 
 /*---------------------------------------
     Icône retour
 ---------------------------------------*/
 
+a.haut {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.8);
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 15vw;
+}
+
+a.haut:hover {
+    color: darkorange;
+    border-color: darkorange;
+}
 
