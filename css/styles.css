@@ -17,9 +17,28 @@ html{
 ------------------------------------------------------------------------------*/
 
 
+body {
+    background-image: url("../images/fond/global.png");
+    background-repeat: repeat;
+    background-color: black;
+    font: 1.6rem "Oranienbaum", "Arial";
+    color: white;
+}
 
+a {
+    color: white;
+    text-decoration: none;
+}
 
+a:hover {
+    color: darkorange;
+}
 
+h2 {
+    font: 3.2rem "Monoton", "Arial";
+    margin: 0;
+    text-transform: uppercase;
+}
 
 /*------------------------------------------------------------------------------
    Modules
@@ -38,8 +57,28 @@ html{
 /* INSÉREZ VOTRE CSS POUR CETTE SECTION ICI */
 
 
+header, section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+header {
+    text-align: center;
+    position: relative;
+}
 
+header a {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+header h1 {
+    font: 10rem "Monoton", "Arial";
+}
 
 /*---------------------------------------
                 Section Générale
@@ -47,8 +86,18 @@ html{
 
 /* INSÉREZ VOTRE CSS POUR CETTE SECTION ICI */
 
+.boite {
+    width: 800px;
+    padding: 48px;
+    background-color: rgba(0,0,0,0.8);
+    border-style: solid;
+    border-radius: 10px;
+}
 
-
+span {
+    font: 1.7rem "Oranienbaum", "Arial";
+    text-transform: lowercase;
+}
 
 /*---------------------------------------
                 Section sports
